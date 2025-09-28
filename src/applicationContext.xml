@@ -28,6 +28,9 @@
         <property name="draw3" ref="draw3"/>
     </bean>
 
+    <bean id="dbOperation" class="DB.DatabaseOperations"
+            init-method="connectToDatabase" destroy-method="disconnectFromDatabase">
+    </bean>
 </beans>
 
 
