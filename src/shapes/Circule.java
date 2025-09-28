@@ -6,6 +6,17 @@ import java.util.Scanner;
 
 public class Circule implements Shape {
 
+    protected Draw2D draw2;
+
+    public Circule(Draw2D draw2)
+    {
+        this.draw2 = draw2;
+    }
+
+    public void drawShape()
+    {
+         this.draw2.draw();
+    }
 
     @Override
     public double getArea()

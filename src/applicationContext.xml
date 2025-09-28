@@ -12,11 +12,21 @@
 
     <bean id="circle"
           class="shapes.Circule">
+        <constructor-arg ref="draw2"/>
     </bean>
 
+    <bean id="draw2"
+          class="shapes.Draw2D">
+    </bean>
+
+    <bean id="draw3"
+          class="shapes.Draw3D">
+    </bean>
 
     <bean id="square"
           class="shapes.Square">
+        <property name="draw3" ref="draw3"/>
+
     </bean>
 
 </beans>

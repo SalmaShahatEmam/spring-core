@@ -12,7 +12,9 @@ public class Main {
         Circule circuleBean = container.getBean("circle" , Circule.class);
         Square squareeBean = container.getBean("square" , Square.class);
 
-        circuleBean.getArea();
-        squareeBean.getArea();
+        circuleBean.drawShape();
+       // squareeBean.setDraw3();
+        squareeBean.drawShape();
+
     }
 }

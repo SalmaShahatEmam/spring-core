@@ -6,6 +6,17 @@ import java.util.Scanner;
 
 public class Square  implements Shape{
 
+    public Draw3D draw3;
+
+    public void setDraw3(Draw3D draw3)
+    {
+        this.draw3 = draw3;
+    }
+
+    public void drawShape()
+    {
+        this.draw3.draw();
+    }
 
     @Override
     public double getArea()
