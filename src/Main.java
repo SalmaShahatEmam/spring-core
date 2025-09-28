@@ -13,7 +13,6 @@ public class Main {
         Square squareeBean = container.getBean("square" , Square.class);
 
         circuleBean.drawShape();
-       // squareeBean.setDraw3();
         squareeBean.drawShape();
 
     }

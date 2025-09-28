@@ -24,9 +24,8 @@
     </bean>
 
     <bean id="square"
-          class="shapes.Square">
+          class="shapes.Square" scope="prototype">
         <property name="draw3" ref="draw3"/>
-
     </bean>
 
 </beans>
